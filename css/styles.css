@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');   
 
-/** Estilizações gerais **/
 body {
     overflow-x: hidden;
     background-color: #222;
     color: #fff;
 }
 
-main {
+main{
     padding-bottom: 20px;
 }
 
@@ -17,43 +16,77 @@ main {
 
 /* Estilo para o container principal */
 body {
-    scrollbar-width: thin;
-    scrollbar-color: #FF2E00 #222;
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: #F77309 #222; /* Para Firefox */
 }
 
 /* Barra de rolagem */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 12px; /* Largura da barra de rolagem */
 }
 
+/* Cor de fundo da barra de rolagem */
 ::-webkit-scrollbar-track {
-    background: #222;
+    background: #222; /* Cor de fundo do track */
 }
 
+/* Cor do polegar (thumb) da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-    background-color: #b32100;
-    border-radius: 8px;
-    border: 2px solid #222;
+    background-color: #F77309; /* Cor do thumb */
+    border-radius: 8px; /* Arredonda o thumb */
+    border: 2px solid #222; /* Espaço entre o thumb e o track */
 }
 
+/* Estilo para o hover no polegar */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #b32100;
+    background-color: #cf5f03; /* Cor ao passar o mouse */
 }
+/*! ---------- !*/
+
+.about-section {
+    background-color: #222;
+    /*'Sobre Mim' em modo escuro */
+    color: #fff;
+}
+
+.portfolio-experiment a{
+    color: #fff;
+}
+
+.projects-section {
+    background-color: #222;
+    /*'Projetos' em modo escuro */
+    color: #f0f0f0;
+}
+
+.experiences-section {
+    background-color: #222;
+    color: #f0f0f0;
+}
+
+.contact-section {
+    background-color: #292F36;
+    /*'Projetos' em modo escuro */
+    color: #f1f1f1;
+}
+
+
 
 /** Header **/
 
 .top {
     position: relative;
     height: 100vh;
-    background: radial-gradient(circle, #2F323A 30%, #222 70%);
+    background: linear-gradient(135deg, #2B303A, #4C5B5C);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* Centraliza na horizontal */
 }
 
 .titulo {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     color: white;
     font-size: 120px;
     white-space: nowrap;
@@ -68,45 +101,36 @@ body {
 .imgPessoa {
     position: absolute;
     bottom: 0px;
-    width: 850px;
+    width: 870px;
     z-index: 1;
 }
 
 /** Menu básico **/
-:root {
-    --primary-color: #FF2E00;
-    --background-color: #121619;
-    --menu-overlay: rgba(0, 0, 0, 0.842);
-    --text-color: white;
-    --font-family: 'Montserrat', sans-serif;
-    --hamburger-size: 30px;
-}
-
 .navbar {
     width: 100%;
-    padding: 10px 30px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     position: fixed;
     top: 0;
     z-index: 10;
-    background-color: var(--background-color);
-    border-bottom: 2px solid var(--primary-color);
+    background-color: #121619;
+    border-bottom: 2px solid #F77309;
 }
 
 /* Ocultar a navegação inicialmente */
 .nav-links {
     position: fixed;
-    top: 0;
+    top: -2000%;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: var(--menu-overlay);
+    background-color: rgba(0, 0, 0, 0.842);
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(-100%);
-    transition: transform 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out;
+    /* Transição suave */
     z-index: 9;
 }
 
@@ -125,10 +149,10 @@ body {
 
 /* Estilo dos links */
 .nav-links ul li a {
-    color: var(--text-color);
+    color: white;
     text-decoration: none;
     font-size: 35px;
-    font-family: var(--font-family);
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Estilizar o ícone de hambúrguer */
@@ -143,9 +167,9 @@ body {
 
 /* Estilo das barras do hambúrguer */
 .hamburger span {
-    width: var(--hamburger-size);
+    width: 30px;
     height: 3px;
-    background-color: var(--text-color);
+    background-color: white;
     transition: transform 0.3s, opacity 0.3s;
 }
 
@@ -164,29 +188,31 @@ body {
 
 /* Quando o menu de navegação está ativo */
 .nav-links.active {
-    transform: translateY(0);
+    top: 0;
 }
 
-/** Breve descrição **/
+/** breve descrição **/
+
+/* Geral */
 .descricao {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-end;  
     padding: 20px 50px;
     gap: 30px;
 }
 
 .alinhamento-descricao {
-    position: absolute;
-    left: 80px;
-    max-width: 600px;
+    position: absolute; 
+    left: 80px; 
+    max-width: 600px; 
     font-family: 'Source Code Pro', monospace;
 }
 
 /* Linha com animação de digitação */
 .line {
     font-family: 'Source code pro';
-    border-right: 2px solid #FF2E00;
+    border-right: 2px solid #F77309;
     color: #bbbbbb;
     font-size: 20px;
     white-space: nowrap;
@@ -201,19 +227,15 @@ body {
 .typing-animation.delay {
     animation: typing2 2s steps(20) 1s normal both, blinkCursor 500ms infinite;
     animation-delay: 4s;
-    border-right: 2px solid transparent;
-}
-
-.typing-animation {
-    animation: typing 3s steps(40) 1s normal both, blinkCursorEnd 4s steps(40) normal both;
+    border-right: 2px solid transparent; /* Cursor invisível no início */
 }
 
 /* Card de localização */
 .location-card {
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    transform: translateY(-50%);
+    position: absolute; /* Posicionamento no lado direito */
+    top: 50%; /* Centraliza verticalmente em relação à altura da seção */
+    right: 0px; /* Alinhado à borda direita com espaçamento */
+    transform: translateY(-50%); /* Ajusta o alinhamento central */
     background-color: #121619;
     color: white;
     padding: 15px 20px;
@@ -250,7 +272,6 @@ body {
     from {
         width: 0;
     }
-
     to {
         width: 19em;
     }
@@ -260,32 +281,26 @@ body {
     from {
         width: 0;
     }
-
     to {
         width: 9em;
     }
 }
 
 @keyframes blinkCursorEnd {
-    0%,
-    90% {
-        border-right-color: #FF2E00;
+    0%, 90% {
+        border-right-color: #F77309;
     }
-
     100% {
         border-right-color: transparent;
     }
 }
 
 @keyframes blinkCursor {
-    0%,
-    50% {
+    0%, 50% {
         border-right-color: transparent;
     }
-
-    51%,
-    100% {
-        border-right-color: #FF2E00;
+    51%, 100% {
+        border-right-color: #F77309;
     }
 }
 
@@ -293,26 +308,21 @@ body {
     0% {
         transform: rotate(0deg);
     }
-
     25% {
         transform: rotate(10deg);
     }
-
     50% {
         transform: rotate(-10deg);
     }
-
     75% {
         transform: rotate(10deg);
     }
-
     100% {
         transform: rotate(0deg);
     }
 }
 
-
-/** section about **/
+/*? section about !*/
 .about-section {
     display: flex;
     flex-direction: column;
@@ -327,23 +337,23 @@ body {
     padding: 15px 30px;
     font-family: 'Raleway';
     margin-top: 50px;
-    background-color: #121619;
+    background-color:#121619;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .informacoes i {
     padding-right: 10px;
-    color: #FF2E00;
+    color: #F77309;
 }
 
-.informacoes {
-    font-size: 25px;
+.informacoes{
+    font-size: 25px;    
 }
 
-.informacoes2 {
+.informacoes2{
     font-size: 22px;
 }
 
@@ -353,38 +363,49 @@ body {
     padding: auto;
 }
 
-/** section Projetos **/
+/*? section Projetos !*/
 
-/*! Este título foi adaptado de Daniel Riemer !*/
+/*! Este título foi adptado de Daniel Riemer !*/
 .titulo-animado {
     text-transform: uppercase;
     letter-spacing: .5em;
     display: inline-block;
-    padding: 1.5em 0;
+    padding: 1.5em 0em;
     position: relative;
-    width: fit-content;
-    margin: 0 auto;
+    width: 30em;
+    border: 1px #141414;
 
     span {
+
         font: 28px "Montserrat";
         font-weight: bold;
         letter-spacing: 0;
         padding: .25em 0 .325em;
         display: block;
+        margin: 0 auto;
+        /* -webkit-text-stroke: 1px #1f1f1f; */
+
+        /* Clip Background Image */
 
         background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
         -webkit-background-clip: text;
         background-clip: text;
+
+        /* Animate Background Image */
+
         -webkit-text-fill-color: transparent;
         -webkit-animation: aitf 80s linear infinite;
 
-        /* Ativando aceleração por hardware */
+        /* Activate hardware acceleration for smoother animations */
+
         -webkit-transform: translate3d(0, 0, 0);
         -webkit-backface-visibility: hidden;
+
     }
 }
 
-/* Animação do título */
+/* Animate Background Image */
+
 @-webkit-keyframes aitf {
     0% {
         background-position: 0% 50%;
@@ -399,25 +420,25 @@ body {
 
 .projects-section {
     text-align: center;
-    padding: 50px 0 100px;
+    padding: 50px 0 100px 0;
+}
+
+.projects-section .project-item {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
 }
 
 .project-item {
+    padding: 40px;
+    margin-bottom: 20px; 
     position: relative;
-    font-family: 'Raleway', sans-serif;
-    padding: 80px;
-    cursor: pointer;
-    overflow: hidden;
-    height: 200px;
-    box-sizing: border-box;
 }
 
 .project-title {
     font-size: 25px;
-    font-weight: bold;
     font-family: 'Raleway';
     z-index: 2;
-    position: relative;
 }
 
 .project-overlay {
@@ -426,62 +447,56 @@ body {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    will-change: opacity;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .project-item:hover .project-overlay {
     opacity: 1;
 }
 
-.project-image,
-.view-button {
+.project-overlay img {
+    z-index: 2;
+    object-fit: cover;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    will-change: transform, top, left;
-    transition: transform 0.3s ease;
-}
-
-.project-image {
     max-width: 300px;
     max-height: 300px;
-    object-fit: cover;
+    width: auto;
+    height: auto;
+    display: block;
     border-radius: 10px;
+    transition: transform 0.5s ease;
 }
 
 .view-button {
-    position: relative;
-    transform: translate(-50%, -50%);
-    text-decoration: none;
-    z-index: 2;
-    cursor: pointer;
+    position: absolute;
+    background-color: #F77309;
     width: 60px;
     height: 60px;
-    background-color: #FF2E00;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
+    text-decoration: none;
     border-radius: 50%;
-    text-align: center;
+    color: white;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    transition: transform 1s linear;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+}
+
+
+.view-button:hover {
+    transform: scale(1.1);
 }
 
 .row {
     height: 1px;
     width: 100%;
-    background-color: #121619;
+    background-color: #736B60;
+    margin: 10px auto;
 }
 
-.lugarBtn {
+.lugarBtn{
     margin-top: 80px;
 }
 
@@ -489,7 +504,7 @@ body {
     text-decoration: none;
     color: #fff;
     padding: 12px 20px;
-    background-color: #FF2E00;
+    background-color: #F77309;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -500,13 +515,12 @@ body {
 }
 
 .btnMais:hover {
-    background-color: #b32100;
+    background-color: #cf5f03;
     transform: scale(1.05);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-/** Experiencias section **/
+/*! Experiencias section !*/
 
 .experiences-section {
     display: flex;
@@ -524,8 +538,8 @@ body {
 }
 
 .experiences-section h2::after {
-    content: '!';
-    color: #FF2E00; 
+    content: '.';
+    color: #F77309;
     font-weight: bold;
 }
 
@@ -541,6 +555,7 @@ body {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(4, .01fr);
+    /* 4 colunas */
     flex-direction: line;
     justify-content: end;
     gap: 15px;
@@ -560,12 +575,15 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    /* Adicionei isso para permitir o uso do z-index */
 }
 
 .experiences-section li:hover {
     background-color: #272727;
     transform: translateY(-5px);
+    /* Só o item específico é afetado */
     z-index: 10;
+    /* Garante que o item hover fique acima dos outros */
 }
 
 .experiences-section li i {
@@ -574,12 +592,13 @@ body {
 }
 
 .experiences-section li:hover i {
-    color: #FF2E00;
+    color: #F77309;
+    /* Cor do ícone alterada ao passar o mouse */
 }
 
 
 
-/** Section Contato **/
+/*! Section Contato !*/
 
 .contact-section {
     text-align: center;
@@ -589,9 +608,9 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 50px;
-    margin: 50px auto;
-    max-width: 800px;
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 50px auto; 
+    max-width: 800px; 
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5); 
 }
 
 
@@ -600,6 +619,7 @@ body {
     gap: 20px;
     align-items: flex-start;
     width: 100%;
+    /* Ocupa toda a largura disponível dentro do container */
 }
 
 
@@ -618,7 +638,7 @@ body {
 
 .contact-icon {
     font-size: 25px;
-    color: #FF2E00;
+    color: #F77309;
 }
 
 .contact-text {
@@ -636,10 +656,7 @@ body {
 
 .btnContato {
     padding: 12px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    background-color: #FF2E00;
+    background-color: #F77309;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -649,11 +666,11 @@ body {
 }
 
 .btnContato:hover {
-    background-color: #b32100;
+    background-color: #cf5f03;
     transform: scale(1.05);
 }
 
-/** Footer **/
+/*! Footer !*/
 
 .footer-section {
     width: 100%;
@@ -704,7 +721,7 @@ body {
 }
 
 .sociais a:hover {
-    color: #FF2E00;
+    color: #f77309;
     box-shadow: 0 4px 12px rgba(255, 119, 9, 0.3);
     transform: scale(1.15);
 }
