@@ -1,5 +1,7 @@
-Comandos para comit no git:
+# Comandos para Commit no Git
 
-git add .
-git commit -m "Mensagem descrevendo a alteração"
-git push
+1. Adicionar as alterações ao staging:  
+   ```bash
+   git add .
+   git commit -m "Mensagem descrevendo a alteração"
+   git push
