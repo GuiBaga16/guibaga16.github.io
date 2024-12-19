@@ -1,8 +1,8 @@
 /** Button sobre mim **/
 
 .portfolio-experiment {
-    margin-left: 750px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-left: 100px;
 }
 
 .portfolio-experiment a {
@@ -19,7 +19,7 @@
 
 
 .portfolio-experiment a .text {
-    color: #fff;    
+    color: #fff;
     /* padding: 0 0.3em; */
     font-family: 'Raleway';
     font-weight: bold;
@@ -131,4 +131,25 @@
 .portfolio-experiment a:hover .line.-bottom {
     transition: transform 0.5s cubic-bezier(0, .53, .29, 1) 0.56s;
     transform-origin: left;
+}
+
+@media (max-width: 768px) {
+    .portfolio-experiment {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+    }
+
+    .informacoes i{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .portfolio-experiment {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-right: 100px;
+       text-align: center;
+    }
 }
