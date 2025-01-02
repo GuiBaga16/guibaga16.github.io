@@ -322,7 +322,6 @@ body {
 .informacoes2 {
     display: flex;
     text-align: justify;
-    word-spacing: -0.2px;
     justify-content: space-between;
     line-height: 1.4;
     font-family: 'Raleway';
@@ -747,10 +746,6 @@ body {
 @media only screen and (max-width: 768px) {
     .navbar {
         padding: 10px 15px;
-    }
-
-    .hamburger {
-        --hamburger-size: 20px;
     }
 
     .nav-links ul li a {
