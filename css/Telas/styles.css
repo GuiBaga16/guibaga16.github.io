@@ -76,9 +76,9 @@ body {
 :root {
     --primary-color: #FF2E00;
     --background-color: #121619;
-    --menu-overlay: rgba(0, 0, 0, 0.842);
+    --menu-overlay: rgba(0, 0, 0, 0.938);
     --text-color: white;
-    --font-family: 'Montserrat', sans-serif;
+    --font-family: 'Raleway';
     --hamburger-size: 30px;
 }
 
@@ -127,8 +127,15 @@ body {
 .nav-links ul li a {
     color: var(--text-color);
     text-decoration: none;
+    font-weight:500;
     font-size: 35px;
     font-family: var(--font-family);
+}
+
+.nav-links ul li a i {
+    margin-right: 5px;
+    font-size:medium;
+    color: var(--primary-color);
 }
 
 /* Estilizar o ícone de hambúrguer */
@@ -606,7 +613,7 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 30px;
-    max-width: 800px;
+    max-width: 1000px;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -630,12 +637,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: bold;
-    margin: 0 0 30px;
+    margin-bottom: 30px;
 }
 
 .contact-info {
     display: flex;
     align-items: center;
+    padding-left: 60px;
     margin-bottom: 20px;
 }
 
@@ -654,10 +662,11 @@ body {
     font-family: 'Montserrat';
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .btnContato {
+    margin-right: 25px;
     padding: 12px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -670,7 +679,7 @@ body {
     transition: background-color 0.3s, transform 0.3s;
     font-family: 'Raleway';
     white-space: nowrap;
-    /* Evita quebra de linha */
+    
 }
 
 
@@ -831,31 +840,36 @@ body {
 
     /** Contato **/
 
-    .contact-section {
-        padding: 40px 15px;
-    }
-
     .contact-title {
         font-size: 28px;
-        /* Título menor */
     }
 
     .contact-text {
         font-size: 15px;
-        text-align: center;
-        /* Centraliza texto no celular */
+        padding-right: 60px;
+        white-space: nowrap;
+        padding-left: 0;
+        text-align: center; 
+    }
+
+    .contact-icon {
+        font-size: 20px;
+        padding-right: 60px;
+        padding-bottom: 10px;
     }
 
     .contact-section .container {
         flex-direction: column;
-        /* Itens em coluna no celular */
         gap: 15px;
     }
 
     .contact-info {
         flex-direction: column;
-        /* Ícone acima do texto */
         text-align: center;
+    }
+
+    .btnContato {
+        margin-left: 30px;
     }
 
     /** footer **/
@@ -1036,15 +1050,34 @@ body {
     /** Contato **/
 
     .contact-title {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .contact-text {
-        font-size: 16px;
+        font-size: 15px;
+        padding-right: 20px;
+        text-align: center; 
+    }
+
+    .contact-info {
+        padding-left: 0px;
+    }
+
+    .contact-icon {
+        font-size: 20px;
+        padding-right: 5px;
+    }
+
+    .entreEmContato {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 30px;
     }
 
     .btnContato {
         font-size: 16px;
-        padding: 10px 16px;
+        margin-left: 15px;
+        padding: 10px 12px;
     }
 }
