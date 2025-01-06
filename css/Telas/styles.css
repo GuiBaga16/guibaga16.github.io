@@ -754,15 +754,11 @@ body {
 /** Responsivo **/
 @media only screen and (max-width: 768px) {
 
-    body {
+    html, body {
         overflow-x: hidden;
-    }
-
-    * {
-        outline: 1px solid red; /* Adiciona uma borda vermelha ao redor de todos os elementos */
+        overscroll-behavior-x: none; /* Previne o efeito de "rebote" lateral */
     }
     
-
     .navbar {
         padding: 10px 15px;
     }
