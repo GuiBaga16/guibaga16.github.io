@@ -418,12 +418,18 @@ body {
     }
 
     .titulo-projetos {
-        font-size: 80px;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 900;
+        top: 30px;
+        bottom: 0px;
     }
+    
     .titulo-projetos::after {
-        font-size: 30px;
-        top: 105px;
+        font-size: 25px;
+        top: 100px;
     }
+
     .titulo-projetos::before {
         display: none;
     }

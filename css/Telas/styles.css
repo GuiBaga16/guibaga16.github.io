@@ -127,14 +127,14 @@ body {
 .nav-links ul li a {
     color: var(--text-color);
     text-decoration: none;
-    font-weight:500;
+    font-weight: 500;
     font-size: 35px;
     font-family: var(--font-family);
 }
 
 .nav-links ul li a i {
     margin-right: 5px;
-    font-size:medium;
+    font-size: medium;
     color: var(--primary-color);
 }
 
@@ -679,7 +679,7 @@ body {
     transition: background-color 0.3s, transform 0.3s;
     font-family: 'Raleway';
     white-space: nowrap;
-    
+
 }
 
 
@@ -753,15 +753,28 @@ body {
 
 /** Responsivo **/
 @media only screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
     .navbar {
         padding: 10px 15px;
+    }
+
+    .hamburger {
+        --hamburger-size: 20px;
     }
 
     .nav-links ul li a {
         font-size: 25px;
     }
 
-    ::-webkit-scrollbar{
+    ::-webkit-scrollbar {
         display: none;
     }
 
@@ -777,7 +790,8 @@ body {
     }
 
     .imgPessoa {
-        width: 500px;
+        width: 470px;
+        height: auto;
     }
 
     .line {
@@ -821,6 +835,7 @@ body {
     }
 
     .about {
+        margin: 0 auto;
         text-align: center;
         flex-direction: column;
         gap: 10px;
@@ -838,7 +853,7 @@ body {
         font-size: 14px;
     }
 
-    #description{
+    #description {
         display: none;
     }
 
@@ -857,7 +872,7 @@ body {
         padding-right: 60px;
         white-space: nowrap;
         padding-left: 0;
-        text-align: center; 
+        text-align: center;
     }
 
     .contact-icon {
@@ -918,7 +933,7 @@ body {
         --hamburger-size: 20px;
     }
 
-    ::-webkit-scrollbar{
+    ::-webkit-scrollbar {
         display: none;
     }
 
@@ -958,26 +973,26 @@ body {
         color: #e4e4e4;
     }
 
-    /** Sobre mim **/ 
+    /** Sobre mim **/
 
     .about-section {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
     .informacoes,
     .informacoes2 {
-        flex-direction: column; 
-        text-align: left; 
-        padding: 20px; 
-        font-size: 20px; 
-        margin-top: 10px; 
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+        font-size: 20px;
+        margin-top: 10px;
     }
 
     .informacoes i,
     .informacoes2 i {
-        padding-right: 5px; 
+        padding-right: 5px;
     }
 
     .informacoes {
@@ -985,64 +1000,79 @@ body {
     }
 
     .informacoes2 {
-        font-size: 18px; 
-        margin-bottom: 15px; 
+        font-size: 18px;
+        margin-bottom: 15px;
     }
 
     .seta {
-        justify-content: center; 
-        margin-top: 15px; 
+        justify-content: center;
+        margin-top: 15px;
     }
 
     .icone-seta {
-        font-size: 20px; 
+        font-size: 20px;
     }
 
     .about {
-        flex-direction: column; 
-        gap: 10px; 
-        padding: 0 10px; 
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 10px;
     }
 
     /** Proetos recentes **/
 
     .projects-section {
-        padding: 30px 10px; /* Reduz o padding para otimizar espaço */
-        text-align: center; /* Mantém o texto centralizado */
+        padding: 30px 10px;
+        /* Reduz o padding para otimizar espaço */
+        text-align: center;
+        /* Mantém o texto centralizado */
     }
 
     .project-item {
-        padding: 80px 20px; /* Reduz o padding interno */
-        height: auto; /* Permite altura automática para melhor adaptação */
+        padding: 80px 20px;
+        /* Reduz o padding interno */
+        height: auto;
+        /* Permite altura automática para melhor adaptação */
     }
 
     .project-title {
-        font-size: 25px; /* Ajusta o tamanho da fonte */
+        font-size: 25px;
+        /* Ajusta o tamanho da fonte */
     }
 
     .project-overlay {
-        background-color: rgba(0, 0, 0, 0.4); /* Intensifica o fundo para tablets */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Intensifica o fundo para tablets */
     }
 
     .project-image {
-        max-width: 100%; /* Garante que a imagem se ajuste ao container */
-        max-height: 150px; /* Reduz a altura máxima da imagem */
-        border-radius: 8px; /* Ajusta a borda */
+        max-width: 100%;
+        /* Garante que a imagem se ajuste ao container */
+        max-height: 150px;
+        /* Reduz a altura máxima da imagem */
+        border-radius: 8px;
+        /* Ajusta a borda */
     }
 
     .view-button {
-        width: 50px; /* Reduz o tamanho do botão */
-        height: 50px; /* Reduz o tamanho do botão */
-        font-size: 14px; /* Diminui o tamanho do texto */
+        width: 50px;
+        /* Reduz o tamanho do botão */
+        height: 50px;
+        /* Reduz o tamanho do botão */
+        font-size: 14px;
+        /* Diminui o tamanho do texto */
     }
 
     .btnMais {
-        font-size: 1rem; /* Reduz o tamanho do botão */
-        padding: 10px 15px; /* Ajusta o padding */
+        font-size: 1rem;
+        /* Reduz o tamanho do botão */
+        padding: 10px 15px;
+        /* Ajusta o padding */
     }
 
     .lugarBtn {
-        margin-top: 40px; /* Reduz o espaçamento superior */
+        margin-top: 40px;
+        /* Reduz o espaçamento superior */
     }
 
     /** experiencias **/
@@ -1055,7 +1085,7 @@ body {
         font-size: 28px;
     }
 
-    #description{
+    #description {
         display: none;
     }
 
@@ -1068,7 +1098,7 @@ body {
     .contact-text {
         font-size: 15px;
         padding-right: 20px;
-        text-align: center; 
+        text-align: center;
     }
 
     .contact-info {

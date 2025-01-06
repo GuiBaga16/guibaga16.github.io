@@ -577,12 +577,15 @@ body {
 
     /* Navbar */
     .navbar {
-        flex-direction: column;
         padding: 10px 15px;
     }
 
+    .hamburger {
+        --hamburger-size: 20px;
+    }
+
     .nav-links ul li a {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     ::-webkit-scrollbar{

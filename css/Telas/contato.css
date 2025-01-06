@@ -304,6 +304,18 @@ button:hover {
 
 @media (max-width: 768px) {
 
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .hamburger {
+        --hamburger-size: 20px;
+    }
+
+    .nav-links ul li a {
+        font-size: 25px;
+    }
+
     ::-webkit-scrollbar{
         display: none;
     }
@@ -318,13 +330,16 @@ button:hover {
     }
 
     .titulo-contato{
-        font-size: 80px;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 900;
+        top: 30px;
+        bottom: 0px;    
     }
 
     .titulo-contato::after{
-        font-size: 30px;
-        font-weight: 900;
-        top: 105px;
+        font-size: 25px;
+        top: 100px;
     }
 
     .titulo-contato::before{
