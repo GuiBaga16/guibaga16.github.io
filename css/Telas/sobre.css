@@ -585,6 +585,10 @@ body {
         font-size: 28px;
     }
 
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
     /* Sobre mim */
 
     .titulo-sobre {
@@ -691,10 +695,40 @@ body {
         display: none;
     }
 
+    /* footer */
+
+    .footer-section {
+        padding: 20px 15px;
+        /* Reduz espaçamento lateral */
+    }
+
+    .h5Sociais {
+        font-size: 14px;
+    }
+
+    .sociais ul {
+        gap: 12px;
+    }
+
+    .sociais a {
+        font-size: 22px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .codeBy {
+        font-size: 12px;
+    }
+
 }
 
 /* Responsividade para tablets */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
     .titulo-sobre {
         font-size: 90px;
         text-align: center;

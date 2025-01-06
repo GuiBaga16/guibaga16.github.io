@@ -761,6 +761,10 @@ body {
         font-size: 25px;
     }
 
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
     /** top **/
 
     .titulo {
@@ -783,12 +787,12 @@ body {
     .location-card {
         width: 150px;
         height: 50px;
+        margin-right: 10px;
         background-color: transparent;
         box-shadow: none;
     }
 
     .location-content {
-        /* display: block; */
         border: 1px solid #FF2E00;
         padding: 10px;
         border-radius: 20px;
@@ -832,6 +836,10 @@ body {
     .experiences-section li {
         padding: 20px;
         font-size: 14px;
+    }
+
+    #description{
+        display: none;
     }
 
     .experiences-section li i {
@@ -908,6 +916,10 @@ body {
 
     .hamburger {
         --hamburger-size: 20px;
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
     }
 
     .nav-links ul li a {
@@ -1043,8 +1055,8 @@ body {
         font-size: 28px;
     }
 
-    #description {
-        font-size: 15px;
+    #description{
+        display: none;
     }
 
     /** Contato **/

@@ -401,6 +401,10 @@ body {
 
 @media only screen and (max-width: 768px) {
 
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
     .navbar {
         padding: 10px 15px;
     }
@@ -433,26 +437,39 @@ body {
         padding: 10px;
     }
 
+    /* footer */
+
     .footer-section {
-        flex-direction: row;
-        text-align: center;
+        padding: 20px 15px;
+        /* Reduz espaçamento lateral */
+    }
+
+    .h5Sociais {
+        font-size: 14px;
     }
 
     .sociais ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        gap: 12px;
     }
 
     .sociais a {
-        width: 28px;
-        height: 58px;
-        font-size: 26px;
+        font-size: 22px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .codeBy {
+        font-size: 12px;
     }
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
     .titulo-projetos {
         font-size: 100px;
     }
