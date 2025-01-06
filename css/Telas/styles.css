@@ -759,8 +759,9 @@ body {
     }
 
     * {
-        box-sizing: border-box;
+        outline: 1px solid red; /* Adiciona uma borda vermelha ao redor de todos os elementos */
     }
+    
 
     .navbar {
         padding: 10px 15px;
@@ -790,7 +791,7 @@ body {
     }
 
     .imgPessoa {
-        width: 470px;
+        width: 500px;
         height: auto;
     }
 
