@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const whatsappButton = document.getElementById('whatsapp-btn');
-    const telefone = '5551995995875'; // Coloque o número do telefone aqui
-    const texto = 'Olá, gostaria de mais informações!'; // Mensagem padrão
+    const telefone = '5551995995875'; 
+    const texto = 'Olá, ví seu portfólio e gostaria de conversar!'; 
 
     whatsappButton.addEventListener('click', (e) => {
-        e.preventDefault(); // Evita o redirecionamento padrão do link
+        e.preventDefault();
 
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         let whatsappURL;

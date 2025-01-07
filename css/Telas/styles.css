@@ -52,7 +52,45 @@ body {
     align-items: center;
 }
 
-.titulo {
+/* Contêiner principal */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+}
+
+/* Carrossel */
+.carousel {
+    display: inline-flex;
+    animation: scroll 30s linear infinite;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Itens do carrossel */
+.carousel-item {
+    margin-top: 500px;
+    display: inline-block;
+    padding: 15px;
+    font-size: 120px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+/* Animação */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* .titulo {
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 120px;
@@ -63,13 +101,13 @@ body {
     position: absolute;
     bottom: 20px;
     z-index: 2;
-}
+} */
 
 .imgPessoa {
     position: absolute;
     bottom: 0px;
     width: 850px;
-    z-index: 1;
+
 }
 
 /** Menu básico **/
@@ -185,6 +223,7 @@ body {
 
 .alinhamento-descricao {
     position: absolute;
+    margin-top: 280px;
     left: 80px;
     max-width: 600px;
     font-family: 'Source Code Pro', monospace;
@@ -754,11 +793,12 @@ body {
 /** Responsivo **/
 @media only screen and (max-width: 768px) {
 
-    html, body {
+    html,
+    body {
         overflow-x: hidden;
-        overscroll-behavior-x: none; /* Previne o efeito de "rebote" lateral */
+        overscroll-behavior-x: none;
     }
-    
+
     .navbar {
         padding: 10px 15px;
     }
@@ -777,8 +817,21 @@ body {
 
     /** top **/
 
-    .titulo {
-        font-size: 40px;
+    /* Carrossel */
+    .carousel {
+        display: inline-flex;
+        animation: scroll 15s linear infinite;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    /* Itens do carrossel */
+    .carousel-item {
+        margin-top: 250px;
+        display: inline-block;
+        padding: 5px;
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
         text-align: center;
     }
 
@@ -814,7 +867,6 @@ body {
         color: #121619;
         background-color: transparent;
         padding: 0;
-        /* padding-bottom: 5px; */
         animation: swing 1.5s ease-in-out infinite;
     }
 
@@ -835,7 +887,6 @@ body {
         margin: 0 auto;
         text-align: center;
         flex-direction: column;
-        gap: 10px;
         max-width: 100%;
     }
 
@@ -896,7 +947,6 @@ body {
 
     .footer-section {
         padding: 20px 15px;
-        /* Reduz espaçamento lateral */
     }
 
     .h5Sociais {
@@ -940,8 +990,22 @@ body {
 
     /** top **/
 
-    .titulo {
-        font-size: 60px;
+    /* Carrossel */
+    .carousel {
+        display: inline-flex;
+        animation: scroll 25s linear infinite;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    /* Itens do carrossel */
+    .carousel-item {
+        margin-top: 400px;
+        display: inline-block;
+        padding: 5px;
+        font-size: 80px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
     }
 
     .top {
@@ -961,7 +1025,6 @@ body {
         color: #888;
         background-color: transparent;
         padding: 0;
-        /* padding-bottom: 5px; */
         animation: swing 1.5s ease-in-out infinite;
     }
 
@@ -1020,56 +1083,41 @@ body {
 
     .projects-section {
         padding: 30px 10px;
-        /* Reduz o padding para otimizar espaço */
         text-align: center;
-        /* Mantém o texto centralizado */
     }
 
     .project-item {
         padding: 80px 20px;
-        /* Reduz o padding interno */
         height: auto;
-        /* Permite altura automática para melhor adaptação */
     }
 
     .project-title {
         font-size: 25px;
-        /* Ajusta o tamanho da fonte */
     }
 
     .project-overlay {
         background-color: rgba(0, 0, 0, 0.4);
-        /* Intensifica o fundo para tablets */
     }
 
     .project-image {
         max-width: 100%;
-        /* Garante que a imagem se ajuste ao container */
         max-height: 150px;
-        /* Reduz a altura máxima da imagem */
         border-radius: 8px;
-        /* Ajusta a borda */
     }
 
     .view-button {
         width: 50px;
-        /* Reduz o tamanho do botão */
         height: 50px;
-        /* Reduz o tamanho do botão */
         font-size: 14px;
-        /* Diminui o tamanho do texto */
     }
 
     .btnMais {
         font-size: 1rem;
-        /* Reduz o tamanho do botão */
         padding: 10px 15px;
-        /* Ajusta o padding */
     }
 
     .lugarBtn {
         margin-top: 40px;
-        /* Reduz o espaçamento superior */
     }
 
     /** experiencias **/

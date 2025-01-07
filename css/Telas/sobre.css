@@ -361,6 +361,10 @@ body {
 
 /* cards */
 
+.card-icon{
+    padding-bottom: 10px;
+}
+
 .cards-formacoes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -376,7 +380,7 @@ body {
     text-align: center;
 }
 
-.card-formacao h2 {
+.card-formacao h3 {
     font-size: 17px;
     font-family: 'Montserrat';
     font-weight: bold;
