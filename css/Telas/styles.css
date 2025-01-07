@@ -54,13 +54,14 @@ body {
 
 /* Contêiner principal */
 .carousel-container {
+    position: relative;
     width: 100%;
-    bottom: 0px; /* Posiciona o carrossel na parte baixa do header */
+    bottom: 0; 
     left: 0;
     overflow: hidden;
     white-space: nowrap;
-    position: relative;
-    z-index: 10;
+    text-align: center;
+    z-index: 9;
 }
 
 /* Carrossel */
@@ -72,10 +73,10 @@ body {
 
 /* Itens do carrossel */
 .carousel-item {
-    margin-top: 500px;
+    margin-top: 480px;
     display: inline-block;
     padding: 15px;
-    font-size: 120px;
+    font-size: 110px;
     font-weight: bold;
     color: #fff;
     text-align: center;
@@ -225,7 +226,7 @@ body {
 
 .alinhamento-descricao {
     position: absolute;
-    margin-top: 280px;
+    margin-top: 290px;
     left: 80px;
     max-width: 600px;
     font-family: 'Source Code Pro', monospace;
