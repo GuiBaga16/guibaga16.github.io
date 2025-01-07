@@ -55,10 +55,12 @@ body {
 /* Contêiner principal */
 .carousel-container {
     width: 100%;
+    bottom: 0px; /* Posiciona o carrossel na parte baixa do header */
+    left: 0;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }
 
 /* Carrossel */
