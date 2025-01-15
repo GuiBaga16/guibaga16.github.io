@@ -10,9 +10,9 @@ const projectTools = {
   ],
   "Projeto 2": [
     { icon: "fa-solid fa-screwdriver-wrench", name: "Ferramentas usadas:" },
-    { icon: "", name: "" },
-    { icon: "", name: "" },
-    { icon: "", name: "" }
+    { icon: "fa-brands fa-react", name: "React" },
+    { icon: "fa-solid fa-bolt", name: "Vite" },
+    { class:"linkArryProjeto", name: "Clique aqui para ir ao repositório!!", link: "https://github.com/GuiBaga16/Trabalhos_Pessoais/tree/main/TocadorDeAudio"}
     
   ],
   "Projeto 3": [
