@@ -8,18 +8,25 @@ const projectTools = {
     { icon: "fa-brands fa-whatsapp", name: "API do WhatsApp" },
     { class:"linkArryProjeto", name: "Clique aqui para ver o site!!", link: "https://sacolafretes.netlify.app"}
   ],
-  "Projeto 2": [
+  "Tocador de Audio": [
     { icon: "fa-solid fa-screwdriver-wrench", name: "Ferramentas usadas:" },
     { icon: "fa-brands fa-react", name: "React" },
     { icon: "fa-solid fa-bolt", name: "Vite" },
     { class:"linkArryProjeto", name: "Clique aqui para ir ao repositório!!", link: "https://github.com/GuiBaga16/Trabalhos_Pessoais/tree/main/TocadorDeAudio"}
     
   ],
-  "Projeto 3": [
+  "To Do List": [
     { icon: "fa-solid fa-screwdriver-wrench", name: "Ferramentas usadas:" },
-    { icon: "", name: "" },
-    { icon: "", name: "" },
-    { icon: "", name: "" }
+    { icon: "fa-brands fa-react", name: "React" },
+    { icon: "fa-solid fa-bolt", name: "Vite" },
+    { class:"linkArryProjeto", name: "Clique aqui para ir ao repositório!!", link: "https://github.com/GuiBaga16/Trabalhos_Pessoais/tree/main/ToDoList"}
+    
+  ],
+  "Cadastro de Treino": [
+    { icon: "fa-solid fa-screwdriver-wrench", name: "Ferramentas usadas:" },
+    { icon: "fa-brands fa-bootstrap", name: "Bootstrap" },
+    { icon: "fa-brands fa-html5", name: "HTML" },
+    { class:"linkArryProjeto", name: "Clique aqui para ver o site!!", link: "https://treinopr.netlify.app/"}
     
   ]
 };
