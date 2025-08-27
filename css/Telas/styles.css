@@ -13,6 +13,8 @@ main {
     padding-bottom: 20px;
 }
 
+
+
 /*! Scroll !*/
 
 /* Estilo para o container principal */
@@ -397,6 +399,10 @@ body {
     flex-direction: column;
 }
 
+.cor-texto {
+    color: #c42400;
+}	
+
 .seta {
     display: flex;
     justify-content: center;
@@ -445,10 +451,13 @@ body {
         background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-animation: aitf 80s linear infinite;
+        animation: aitf 80s linear infinite;
 
         /* Ativando aceleração por hardware */
         -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
         -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
 

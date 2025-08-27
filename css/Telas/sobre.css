@@ -660,12 +660,17 @@ body {
     }
 
     .logoCiamed {
-        width: 80%;
         margin: 0 auto;
     }
 
-    .infCiamed {
+    .logoCiaComputador {
+        margin: 0 auto;
+    }
+
+    .infEmpresa {
+        margin-top: 20px;
         font-size: 14px;
+        text-align: center;
     }
 
     /* Formação e Educação */
@@ -790,7 +795,12 @@ body {
         margin: 0 auto;
     }
 
-    .infCiamed {
+    .logoCiaComputador {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .infEmpresa {
         padding-left: 10px;
         font-size: 14px;
     }
